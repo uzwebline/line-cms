@@ -1,0 +1,51 @@
+.form-horizontal .ck.ck-editor__editable_inline {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    border: 1px solid #DFE4E6;
+    border-bottom-color: #cdd0d2;
+    border-right-color: #cdd0d2;
+}
+
+.ck.ck-editor {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    border: 1px solid #DFE4E6;
+    border-bottom-color: #cdd0d2;
+    border-right-color: #cdd0d2;
+}
+
+.ck.ck-editor {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.ck.ck-content {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-bottom: 0.6em;
+    min-height: 200px;
+    padding: 1.5em 2em;
+    max-height: 400px;
+}
+
+.tokenize ul {
+    margin-bottom: 0 !important;
+}
+
+.af_block {
+    margin-bottom: 5px;
+}
+
+.af_block_title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+.af_block_content {
+
+}
+
+.af_block_content_item {
+    margin-bottom: 3px;
+    padding: 3px;
+    border: solid 1px #e7e7e7;
+}
