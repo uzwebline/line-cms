@@ -1,0 +1,17 @@
+{
+    "name": "uzwebline/linecms",
+    "license": "Apache License 2.0",
+    "autoload": {
+        "psr-4": {
+            "Uzwebline\\Linecms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "uzwebline",
+            "email": "programm011@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

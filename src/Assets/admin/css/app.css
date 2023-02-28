@@ -1,0 +1,23 @@
+.sl-vue-tree.sl-vue-tree-root .sl-vue-tree-nodes-list .sl-vue-tree-node .sl-vue-tree-node-item {
+  border: solid 1px #ccc;
+  margin: 3px 0;
+  padding: 5px 5px;
+}
+
+.sl-vue-tree.sl-vue-tree-root .sl-vue-tree-nodes-list .sl-vue-tree-node .sl-vue-tree-node-item .sl-vue-tree-title .sl-vue-tree-toggle {
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  border: solid 1px #ccc;
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+.sl-vue-tree.sl-vue-tree-root .sl-vue-tree-nodes-list .sl-vue-tree-node .sl-vue-tree-node-item .sl-vue-tree-title .sl-vue-tree-title-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
