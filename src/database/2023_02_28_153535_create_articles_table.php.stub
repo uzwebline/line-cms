@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('articles', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('article_type_id')->constrained()->cascadeOnDelete();
+            $table->string('template')->default('default');
+            $table->text('image')->nullable();
+            $table->longText('af')->nullable();
+            $table->foreignId('parent_id')->nullable()->constrained('articles')->cascadeOnDelete();
+            $table->integer('_lft')->default(0);
+            $table->integer('_rgt')->default(0);
+            $table->tinyInteger('published')->default(1);
+            $table->dateTime('published_at');
+            $table->bigInteger('views_count')->default(0);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('articles');
+    }
+};
