@@ -13,5 +13,14 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^8.1",
+        "alexusmai/laravel-file-manager": "^3.0",
+        "astrotomic/laravel-translatable": "^11.12",
+        "kalnoy/nestedset": "^6.0",
+        "santigarcor/laratrust": "^7.2",
+        "spatie/laravel-sitemap": "^6.2",
+        "spatie/laravel-translation-loader": "^2.7",
+        "spatie/laravel-view-models": "^1.5"
+    }
 }
