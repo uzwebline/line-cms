@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
+
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        DB::unprepared('
+            CREATE TRIGGER `create_sorting` BEFORE INSERT
+            ON `article_taxonomy_terms`
+            FOR EACH ROW
+                BEGIN
+                    SET NEW.sorting = NEW.taxonomy_term_id + NEW.article_id;
+                END
+        ');
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        DB::unprepared('DROP TRIGGER `create_sorting`');
+    }
+};

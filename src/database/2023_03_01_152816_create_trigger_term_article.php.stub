@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
+
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        DB::unprepared('
+           CREATE TRIGGER `trigger_term_articles` AFTER DELETE ON `taxonomy_terms`
+           FOR EACH ROW BEGIN
+            DELETE FROM articles WHERE ID = OLD.article_id;
+           END
+        ');
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        DB::unprepared('DROP TRIGGER `trigger_term_articles`');
+    }
+};
