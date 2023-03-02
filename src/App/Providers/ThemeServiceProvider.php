@@ -22,5 +22,7 @@ class ThemeServiceProvider extends ServiceProvider
         $translations = base_path("themes/$theme/lang");
 
         $this->loadTranslationsFrom($translations, 'theme');
+
+        $this->publishes([__DIR__ . '/assets' => public_path('vendor/linecms')], 'public');
     }
 }
